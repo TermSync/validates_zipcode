@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+## 0.5.2
+
+- Added support for Puerto Rico, thanks to ~ @tahanson
+- Added support for newer Honduras codes with backwards compatibility ~ @tahanson
+
 ## 0.5.1
 
 - Fixes Mongolia postal codes, thanks to ~ @lucasfcunha

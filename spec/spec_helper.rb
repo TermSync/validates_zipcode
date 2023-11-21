@@ -2218,22 +2218,6 @@ TEST_DATA = {
       '12'
     ]
   },
-  BO: {
-    valid: %w[
-      7113
-      2566
-      6261
-      7113
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      '12345',
-      '1234-1234',
-      'D0D0D0'
-    ]
-  },
   BW: {
     valid: %w[
       42511
@@ -2628,6 +2612,7 @@ TEST_DATA = {
     valid: %w[
       BV2722
       XY1234
+      12345
     ],
     invalid: [
       nil,
@@ -2635,7 +2620,8 @@ TEST_DATA = {
       'invalid_zip',
       'B2722',
       'XY12345',
-      'XY123'
+      'XY123',
+      '123456'
     ]
   },
   IO: {

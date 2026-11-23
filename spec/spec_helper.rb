@@ -2279,23 +2279,6 @@ TEST_DATA = {
       '12'
     ]
   },
-  CI: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
   CO: {
     valid: %w[
       42511
@@ -3062,23 +3045,6 @@ TEST_DATA = {
       '1234',
       '12345-12345',
       'D0D0D0'
-    ]
-  },
-  QA: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
     ]
   },
   RW: {

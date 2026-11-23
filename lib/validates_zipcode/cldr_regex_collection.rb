@@ -163,7 +163,8 @@ module ValidatesZipcode
       BW: /\A([A-Z\d\s]){3,}\z/i,
       CF: /\A([A-Z\d\s]){3,}\z/i,
       CG: /\A([A-Z\d\s]){3,}\z/i,
-      CI: /\A([A-Z\d\s]){3,}\z/i,
+      # NOTE: Côte d'Ivoire has no postal codes
+      # CI: /\A([A-Z\d\s]){3,}\z/i,
       # NOTE: Cameroon has no postal codes
       # CM: /\A([A-Z\d]){3,7}\z/i,
       CO: /\A([A-Z\d\s]){3,}\z/i,
@@ -217,7 +218,8 @@ module ValidatesZipcode
       PS: /\A\d{3}\z/,
       PA: /\A\d{4}\z/,
       PE: /\A\d{5}\z/,
-      QA: /\A([A-Z\d\s]){3,}\z/i,
+      # NOTE: Qatar has no postal codes
+      # QA: /\A([A-Z\d\s]){3,}\z/i,
       RW: /\A([A-Z\d\s]){3,}\z/i,
       SC: /\A([A-Z\d\s]){3,}\z/i,
       SE: /\A\d{3} ?\d{2}\z/,

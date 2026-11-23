@@ -41,6 +41,14 @@ describe ValidatesZipcode, '#validate_each' do
     end
   end
 
+  context 'countries without postcodes' do
+    ValidatesZipcode::CldrRegexpCollection::COUNTRIES_WITHOUT_POSTCODES.each do |country_code|
+      it "accepts a blank zipcode for #{country_code}" do
+        zipcode_should_be_valid(build_record('', country_code))
+      end
+    end
+  end
+
   context 'Excluded existing country code' do
     context 'Panama' do
       it 'validates with a valid zipcode' do

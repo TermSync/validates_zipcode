@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 require 'validates_zipcode/railtie' if defined?(Rails)
 require 'validates_zipcode/cldr_regex_collection'
+require 'validates_zipcode/countries_without_postcodes'
 require 'validates_zipcode/invalid_zipcode_error'
 require 'validates_zipcode/validator'
 require 'validates_zipcode/helper_methods'

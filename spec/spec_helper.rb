@@ -1481,22 +1481,6 @@ TEST_DATA = {
       '1234'
     ]
   },
-  CK: {
-    valid: %w[
-      7113
-      2566
-      6261
-      7113
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      '12345',
-      '1234-1234',
-      'D0D0D0'
-    ]
-  },
   RS: {
     valid: %w[
       07113
@@ -2060,92 +2044,7 @@ TEST_DATA = {
       'D0D0D0'
     ]
   },
-  AG: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  AO: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
   BF: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  BI: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  BS: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  BZ: {
     valid: %w[
       42511
       AZ42511
@@ -2179,23 +2078,6 @@ TEST_DATA = {
       '12345'
     ]
   },
-  BJ: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
   BT: {
     valid: %w[
       07113
@@ -2209,74 +2091,6 @@ TEST_DATA = {
       '1234',
       '12345-12345',
       'D0D0D0'
-    ]
-  },
-  BQ: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  BW: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  CF: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  CG: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
     ]
   },
   CO: {
@@ -2326,41 +2140,7 @@ TEST_DATA = {
       'D0D0D0'
     ]
   },
-  KM: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
   DJ: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  DM: {
     valid: %w[
       42511
       AZ42511
@@ -2394,23 +2174,6 @@ TEST_DATA = {
       '12'
     ]
   },
-  GQ: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
   EL: {
     valid: %w[
       07113
@@ -2424,40 +2187,6 @@ TEST_DATA = {
       '1234',
       '12345-12345',
       'D0D0D0'
-    ]
-  },
-  ER: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  FJ: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
     ]
   },
   FR: {
@@ -2491,41 +2220,7 @@ TEST_DATA = {
       'D0D0D0'
     ]
   },
-  GD: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
   GH: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  GM: {
     valid: %w[
       42511
       AZ42511
@@ -2716,23 +2411,6 @@ TEST_DATA = {
       'NK4702'
     ]
   },
-  KP: {
-    valid: %w[
-      123
-      ABC
-      12345678
-      123sd678
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      '12',
-      'AB',
-      '123456789',
-      '12f3sd678'
-    ]
-  },
   LI: {
     valid: %w[
       7113
@@ -2763,21 +2441,6 @@ TEST_DATA = {
       'LV-123',
       'L-1234',
       '123'
-    ]
-  },
-  LY: {
-    valid: %w[
-      07113
-      02566
-      66261
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      '1234',
-      '12345-12345',
-      'D0D0D0'
     ]
   },
   LT: {
@@ -2871,23 +2534,6 @@ TEST_DATA = {
       '1234',
       '12345-12345',
       'D0D0D0'
-    ]
-  },
-  MR: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
     ]
   },
   MM: {
@@ -3047,40 +2693,6 @@ TEST_DATA = {
       'D0D0D0'
     ]
   },
-  RW: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  SC: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
   SE: {
     valid: [
       '048 80',
@@ -3105,57 +2717,6 @@ TEST_DATA = {
       '',
       'invalid_zip',
       '120 00'
-    ]
-  },
-  SL: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  SB: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  SR: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
     ]
   },
   SO: {
@@ -3205,87 +2766,6 @@ TEST_DATA = {
       '1234',
       '12345-12345',
       'D0D0D0'
-    ]
-  },
-  ST: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  SY: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  SS: {
-    valid: %w[
-      07113
-      02566
-      66261
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      '1234',
-      '12345-12345',
-      'D0D0D0'
-    ]
-  },
-  TD: {
-    valid: %w[
-      07113
-      02566
-      66261
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      '1234',
-      '12345-12345',
-      'D0D0D0'
-    ]
-  },
-  TG: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
     ]
   },
   TO: {
@@ -3464,58 +2944,7 @@ TEST_DATA = {
       'D0D0D0'
     ]
   },
-  VU: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
   WS: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  YE: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      'AB',
-      '12'
-    ]
-  },
-  ZW: {
     valid: %w[
       42511
       AZ42511

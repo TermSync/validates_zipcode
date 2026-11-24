@@ -2,8 +2,53 @@
 
 module ValidatesZipcode
   module CldrRegexpCollection
-    COUNTRIES_WITHOUT_POSTCODES = Set.new(
-      %i[AE BO CI CM QA]
-    ).freeze
+    COUNTRIES_WITHOUT_POSTCODES = {
+      AE: 'United Arab Emirates',
+      AG: 'Antigua and Barbuda',
+      AO: 'Angola',
+      AQ: 'Antarctica',
+      AW: 'Aruba',
+      BI: 'Burundi',
+      BJ: 'Benin',
+      BO: 'Bolivia',
+      BQ: 'Bonaire, Sint Eustatius and Saba',
+      BS: 'Bahamas',
+      BV: 'Bouvet Island',
+      BW: 'Botswana',
+      BZ: 'Belize',
+      CF: 'Central African Republic',
+      CG: 'Congo',
+      CI: 'Côte d\'Ivoire',
+      CK: 'Cook Islands',
+      CM: 'Cameroon',
+      CW: 'Curaçao',
+      DM: 'Dominica',
+      ER: 'Eritrea',
+      FJ: 'Fiji',
+      GD: 'Grenada',
+      GM: 'Gambia',
+      GQ: 'Equatorial Guinea',
+      KM: 'Comoros',
+      KP: 'North Korea',
+      LY: 'Libya',
+      ML: 'Mali',
+      MR: 'Mauritania',
+      QA: 'Qatar',
+      RW: 'Rwanda',
+      SB: 'Solomon Islands',
+      SC: 'Seychelles',
+      SL: 'Sierra Leone',
+      SR: 'Suriname',
+      SS: 'South Sudan',
+      ST: 'Sao Tomé and Principe',
+      SX: 'Sint Maarten (Dutch part)',
+      SY: 'Syria',
+      TD: 'Chad',
+      TG: 'Togo',
+      TK: 'Tokelau',
+      VU: 'Vanuatu',
+      YE: 'Yemen',
+      ZW: 'Zimbabwe'
+    }.freeze
   end
 end

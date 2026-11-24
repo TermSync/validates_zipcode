@@ -42,9 +42,14 @@ describe ValidatesZipcode, '#validate_each' do
   end
 
   context 'countries without postcodes' do
-    ValidatesZipcode::CldrRegexpCollection::COUNTRIES_WITHOUT_POSTCODES.each do |country_code|
+    ValidatesZipcode::CldrRegexpCollection::COUNTRIES_WITHOUT_POSTCODES.each_key do |country_code|
       it "accepts a blank zipcode for #{country_code}" do
         zipcode_should_be_valid(build_record('', country_code))
+      end
+
+      it "has no zipcode regex or fixture for #{country_code}" do
+        expect(ValidatesZipcode::CldrRegexpCollection::ZIPCODES_REGEX).not_to have_key(country_code)
+        expect(TEST_DATA).not_to have_key(country_code)
       end
     end
   end

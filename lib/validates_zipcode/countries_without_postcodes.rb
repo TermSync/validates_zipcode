@@ -25,6 +25,7 @@ module ValidatesZipcode
       DM: 'Dominica',
       ER: 'Eritrea',
       FJ: 'Fiji',
+      GA: 'Gabon',
       GD: 'Grenada',
       GM: 'Gambia',
       GQ: 'Equatorial Guinea',

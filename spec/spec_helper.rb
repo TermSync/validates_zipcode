@@ -2045,20 +2045,18 @@ TEST_DATA = {
     ]
   },
   BF: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
+    valid: [
       nil,
       '',
-      'invalid_zip',
-      'AB',
-      '12'
+      '10010',
+      '10000',
+      '70000'
+    ],
+    invalid: %w[
+      invalid_zip
+      1234
+      12345-12345
+      D0D0D0
     ]
   },
   BR: {
@@ -2201,22 +2199,6 @@ TEST_DATA = {
       'invalid_zip',
       '1234',
       '12345-12345',
-      'D0D0D0'
-    ]
-  },
-  GA: {
-    valid: %w[
-      7113
-      2566
-      6261
-      7113
-    ],
-    invalid: [
-      nil,
-      '',
-      'invalid_zip',
-      '12345',
-      '1234-1234',
       'D0D0D0'
     ]
   },
@@ -2365,7 +2347,9 @@ TEST_DATA = {
       'JMCJS10',
       'JMDWD08',
       'JMCAN20',
-      'JMDCN29'
+      'JMDCN29',
+      '0000',
+      '00000'
     ],
     invalid: %w[
       invalid_zip
@@ -2374,6 +2358,7 @@ TEST_DATA = {
       JMDWD31
       JMDCN91
       JMXYZ05
+      53562
     ]
   },
   KI: {
@@ -2720,20 +2705,21 @@ TEST_DATA = {
     ]
   },
   SO: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
+    valid: [
       nil,
       '',
+      'JH09010',
+      'JH 09010',
+      'jh09010',
+      '0000',
+      '00000'
+    ],
+    invalid: [
       'invalid_zip',
-      'AB',
-      '12'
+      '53562',
+      'JH0901',
+      'JH090100',
+      'JH  09010'
     ]
   },
   SV: {
@@ -2769,20 +2755,24 @@ TEST_DATA = {
     ]
   },
   TO: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
+    valid: [
       nil,
       '',
+      '103005004',
+      'PC103005004',
+      'PC 103005004',
+      'pc 103005004',
+      '0000',
+      '00000'
+    ],
+    invalid: [
       'invalid_zip',
-      'AB',
-      '12'
+      '53562',
+      '10300500',
+      '1030050040',
+      'AB 103005004',
+      'PC  103005004',
+      'PC'
     ]
   },
   TZ: {
@@ -2818,6 +2808,28 @@ TEST_DATA = {
       'D0D0D0'
     ]
   },
+  TV: {
+    valid: [
+      nil,
+      '',
+      'TUV150',
+      'TUV 150',
+      'tuv150',
+      'TUV120',
+      'TUV710',
+      '0000',
+      '00000'
+    ],
+    invalid: [
+      'invalid_zip',
+      '150',
+      '53562',
+      'TV150',
+      'TUV15',
+      'TUV1500',
+      'TUV  150'
+    ]
+  },
   TW: {
     valid: %w[
       833
@@ -2831,37 +2843,39 @@ TEST_DATA = {
     ]
   },
   UG: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
+    valid: [
       nil,
       '',
-      'invalid_zip',
-      'AB',
-      '12'
+      '10000',
+      '22321',
+      '12331',
+      '0000',
+      '00000'
+    ],
+    invalid: %w[
+      invalid_zip
+      1234
+      123456
+      ABCDE
     ]
   },
   UM: {
-    valid: %w[
-      42511
-      AZ42511
-      XY12Z
-      A12
-      123
-      ABC
-    ],
-    invalid: [
+    valid: [
       nil,
       '',
+      96_898,
+      '96898',
+      '96898-9997',
+      '96898 9997',
+      '0000'
+    ],
+    invalid: [
       'invalid_zip',
-      'AB',
-      '12'
+      '1234',
+      '12345-12345',
+      'D0D0D0',
+      '12345-123456',
+      '12345 123456'
     ]
   },
   UY: {

@@ -114,6 +114,13 @@ describe ValidatesZipcode, '.valid?' do
     end
   end
 
+  context 'with nil zipcodes' do
+    it 'accepts nil for optional postcodes and rejects it for required postcodes' do
+      expect(ValidatesZipcode.valid?(nil, 'TV')).to eq(true)
+      expect(ValidatesZipcode.valid?(nil, 'US')).to eq(false)
+    end
+  end
+
   context 'with formatting' do
     it 'is true with a valid zipcode for a given country code' do
       expect(ValidatesZipcode.valid?('28 108', 'ES', format: true)).to eq(true)

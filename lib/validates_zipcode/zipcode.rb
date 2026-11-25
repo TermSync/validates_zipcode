@@ -15,7 +15,7 @@ module ValidatesZipcode
       return false unless valid_country_alpha2?
       return true unless regexp
 
-      zipcode = @format ? formatted_zip : @zipcode
+      zipcode = @format ? formatted_zip : @zipcode.to_s
       !!(regexp =~ zipcode)
     end
     alias_method :validate, :valid?
